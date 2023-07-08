@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    font-family: arial, sans-serif;
+    font-size: 30px;
+}
+
+h2 {
+    margin-top: 40px;
+    font-family: arial, sans-serif;
+    font-size: 20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+<!--  width: 100%;-->
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+audio {
+    height: 30px;
+}
+
+center {
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<center>
+<h1>Restoration Comparison</h1>
+See also: <a href="https://divideconcept.github.io/Unmix-Comparison/">Unmix Comparison</a><br/><br/>
+
+<table>
+    <tr>
+        <th>Features</th>
+        <th>SpectraLayers 10.0</th>
+        <th>RX 10.4</th>
+        <th>Acoustica 7.4</th>
+    </tr>
+    <tr>
+        <td>GPU Acceleration</td>
+        <td><center>NVIDIA/AMD/Intel</center></td>
+        <td><center>None</center></td>
+        <td><center>None</center></td>
+    </tr>
+    <tr>
+        <td>Denoise</td>
+        <td><center>Yes</center></td>
+        <td><center>Yes</center></td>
+        <td><center>Yes</center></td>
+    </tr>
+    <tr>
+        <td>Dereverb</td>
+        <td><center>Yes</center></td>
+        <td><center>Yes</center></td>
+        <td><center>No</center></td>
+    </tr>
+    <tr>
+        <td>Devoice</td>
+        <td><center>Yes</center></td>
+        <td><center>No</center></td>
+        <td><center>No</center></td>
+    </tr>
+</table>
+
+<h2>Denoise</h2>
+<table>
+    <tr>
+        <th>Original</th>
+        <th>SpectraLayers 10.0</th>
+        <th>RX 10.4</th>
+        <th>Acoustica 7.4</th>
+    </tr>
+    <tr>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/noise1.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/noise1_sl.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/noise1_rx.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/noise1_acoustica.wav?raw=true"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/noise2.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/noise2_sl.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/noise2_rx.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/noise2_acoustica.wav?raw=true"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/noise3.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/noise3_sl.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/noise3_rx.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/noise3_acoustica.wav?raw=true"></audio></td>
+    </tr>
+</table>
+
+<h2>Dereverb</h2>
+<table>
+    <tr>
+        <th>Original</th>
+        <th>SpectraLayers 10.0</th>
+        <th>RX 10.4</th>
+        <th>Acoustica 7.4</th>
+    </tr>
+    <tr>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/reverb1.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/reverb1_sl.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/reverb1_rx.wav?raw=true"></audio></td>
+        <td><center>-</center></td>
+    </tr>
+    <tr>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/reverb2.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/reverb2_sl.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/reverb2_rx.wav?raw=true"></audio></td>
+        <td><center>-</center></td>
+    </tr>
+    <tr>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/reverb3.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/reverb3_sl.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/reverb3_rx.wav?raw=true"></audio></td>
+        <td><center>-</center></td>
+    </tr>
+</table>
+
+<h2>Devoice</h2>
+<table>
+    <tr>
+        <th>Original</th>
+        <th>SpectraLayers 10.0</th>
+        <th>RX 10.4</th>
+        <th>Acoustica 7.4</th>
+    </tr>
+    <tr>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/voice1.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/voice1_sl_1.wav?raw=true"></audio><br/>
+            <audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/voice1_sl_2.wav?raw=true"></audio></td>
+        <td><center>-</center></td>
+        <td><center>-</center></td>
+    </tr>
+    <tr>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/voice2.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/voice2_sl_1.wav?raw=true"></audio><br/>
+            <audio controls preload="none" src="https://github.com/divideconcept/Unmix-Comparison/blob/main/voice2_sl_2.wav?raw=true"></audio></td>
+        <td><center>-</center></td>
+        <td><center>-</center></td>
+    </tr>
+</table>
+
+</center>
+</body>
+</html>
