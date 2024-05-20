@@ -60,10 +60,10 @@ See also: <a href="https://divideconcept.github.io/Unmix-Comparison/">Music Unmi
 <table>
     <tr>
         <th>Features</th>
-        <th>SpectraLayers 10</th>
+        <th>SpectraLayers 11</th>
         <th>Clarity Vx 14</th>
-        <th>RX 10.4</th>
-        <th>Acoustica 7.4</th>
+        <th>RX 11</th>
+        <th>Acoustica 7.5</th>
         <th>DeVerberate 3</th>
     </tr>
     <tr>
@@ -75,7 +75,7 @@ See also: <a href="https://divideconcept.github.io/Unmix-Comparison/">Music Unmi
         <td><center>None</center></td>
     </tr>
     <tr>
-        <td><a href="#denoise">Denoise</a></td>
+        <td><a href="#denoise">DeNoise</a></td>
         <td><center>Yes</center></td>
         <td><center>Yes</center></td>
         <td><center>Yes</center></td>
@@ -83,7 +83,7 @@ See also: <a href="https://divideconcept.github.io/Unmix-Comparison/">Music Unmi
         <td><center>No</center></td>
     </tr>
     <tr>
-        <td><a href="#dereverb">Dereverb</a></td>
+        <td><a href="#dereverb">DeReverb</a></td>
         <td><center>Yes</center></td>
         <td><center>Yes</center></td>
         <td><center>Yes</center></td>
@@ -91,7 +91,15 @@ See also: <a href="https://divideconcept.github.io/Unmix-Comparison/">Music Unmi
         <td><center>Yes</center></td>
     </tr>
     <tr>
-        <td><a href="#devoice">Devoice</a></td>
+        <td><a href="#declip">DeClip</a></td>
+        <td><center>Yes</center></td>
+        <td><center>No</center></td>
+        <td><center>Yes</center></td>
+        <td><center>Yes</center></td>
+        <td><center>No</center></td>
+    </tr>
+    <tr>
+        <td><a href="#devoice">DeVoice</a></td>
         <td><center>Yes</center></td>
         <td><center>No</center></td>
         <td><center>No</center></td>
@@ -100,212 +108,251 @@ See also: <a href="https://divideconcept.github.io/Unmix-Comparison/">Music Unmi
     </tr>
 </table>
 
-<h2><a id="denoise">Denoise</a></h2>
+<h2><a id="denoise">DeNoise</a></h2>
 <table>
     <tr>
         <th>Original</th>
-        <th>SpectraLayers 10</th>
+        <th>SpectraLayers 11</th>
         <th>Clarity Vx 14<br/>(Neural Network 1)</th>
         <th>Clarity Vx 14<br/>(Neural Network 2)</th>
-        <th>RX 10.4</th>
-        <th>Acoustica 7.4</th>
+        <th>RX 11</th>
+        <th>Acoustica 7.5</th>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise1_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise1_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise1_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise1_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise1_acoustica.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="noise1.wav"></audio></td>
+        <td><audio controls preload="none" src="noise1_sl11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise1_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="noise1_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="noise1_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise1_acoustica.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise2_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise2_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise2_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise2_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise2_acoustica.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="noise2.wav"></audio></td>
+        <td><audio controls preload="none" src="noise2_sl11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise2_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="noise2_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="noise2_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise2_acoustica.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise3.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise3_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise3_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise3_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise3_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise3_acoustica.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="noise3.wav"></audio></td>
+        <td><audio controls preload="none" src="noise3_sl11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise3_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="noise3_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="noise3_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise3_acoustica.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise4.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise4_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise4_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise4_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise4_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise4_acoustica.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="noise4.wav"></audio></td>
+        <td><audio controls preload="none" src="noise4_sl11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise4_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="noise4_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="noise4_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise4_acoustica.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise5.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise5_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise5_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise5_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise5_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise5_acoustica.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="noise5.wav"></audio></td>
+        <td><audio controls preload="none" src="noise5_sl11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise5_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="noise5_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="noise5_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise5_acoustica.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise6.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise6_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise6_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise6_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise6_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise6_acoustica.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="noise6.wav"></audio></td>
+        <td><audio controls preload="none" src="noise6_sl11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise6_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="noise6_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="noise6_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise6_acoustica.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise7.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise7_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise7_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise7_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise7_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise7_acoustica.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="noise7.wav"></audio></td>
+        <td><audio controls preload="none" src="noise7_sl11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise7_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="noise7_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="noise7_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise7_acoustica.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise8.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise8_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise8_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise8_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise8_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/noise8_acoustica.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="noise8.wav"></audio></td>
+        <td><audio controls preload="none" src="noise8_sl11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise8_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="noise8_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="noise8_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="noise8_acoustica.wav"></audio></td>
     </tr>
 </table>
 
-<h2><a id="dereverb">Dereverb</a></h2>
+<h2><a id="dereverb">DeReverb</a></h2>
 <table>
     <tr>
         <th>Original</th>
-        <th>SpectraLayers 10</th>
+        <th>SpectraLayers 11</th>
         <th>Clarity Vx 14<br/>(Neural Network 1)</th>
         <th>Clarity Vx 14<br/>(Neural Network 2)</th>
-        <th>RX 10.4</th>
+        <th>RX 11</th>
         <th>DeVerberate 3</th>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb1_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb1_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb1_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb1_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb1_deverberate.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="reverb1.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb1_sl.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb1_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb1_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb1_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb1_deverberate.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb2_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb2_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb2_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb2_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb2_deverberate.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="reverb2.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb2_sl.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb2_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb2_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb2_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb2_deverberate.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb3.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb3_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb3_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb3_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb3_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb3_deverberate.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="reverb3.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb3_sl.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb3_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb3_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb3_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb3_deverberate.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb4.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb4_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb4_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb4_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb4_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb4_deverberate.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="reverb4.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb4_sl.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb4_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb4_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb4_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb4_deverberate.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb5.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb5_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb5_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb5_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb5_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb5_deverberate.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="reverb5.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb5_sl.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb5_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb5_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb5_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb5_deverberate.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb6.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb6_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb6_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb6_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb6_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb6_deverberate.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="reverb6.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb6_sl.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb6_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb6_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb6_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb6_deverberate.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb7.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb7_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb7_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb7_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb7_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb7_deverberate.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="reverb7.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb7_sl.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb7_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb7_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb7_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb7_deverberate.wav"></audio></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb8.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb8_sl.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb8_clarity_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb8_clarity_2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb8_rx.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/reverb8_deverberate.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="reverb8.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb8_sl.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb8_clarity_1.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb8_clarity_2.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb8_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="reverb8_deverberate.wav"></audio></td>
     </tr>
 </table>
 
-<h2><a id="devoice">Devoice</a></h2>
+<h2><a id="declip">DeClip</a></h2>
 <table>
     <tr>
         <th>Original</th>
-        <th>SpectraLayers 10<br/>(Main Voice)</th>
-        <th>SpectraLayers 10<br/>(Background Voice)</th>
+        <th>SpectraLayers 11</th>
         <th>Clarity Vx 14</th>
-        <th>RX 10.4</th>
-        <th>Acoustica 7.4</th>
+        <th>RX 11</th>
+        <th>Acoustica 7.5</th>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice1_sl_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice1_sl_2.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="clip1.wav"></audio></td>
+        <td><audio controls preload="none" src="clip1_sl11.wav"></audio></td>
+        <td><center>-</center></td>
+        <td><audio controls preload="none" src="clip1_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="clip1_acoustica.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls preload="none" src="clip2.wav"></audio></td>
+        <td><audio controls preload="none" src="clip2_sl11.wav"></audio></td>
+        <td><center>-</center></td>
+        <td><audio controls preload="none" src="clip2_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="clip2_acoustica.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls preload="none" src="clip3.wav"></audio></td>
+        <td><audio controls preload="none" src="clip3_sl11.wav"></audio></td>
+        <td><center>-</center></td>
+        <td><audio controls preload="none" src="clip3_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="clip3_acoustica.wav"></audio></td>
+    </tr>
+    <tr>
+        <td><audio controls preload="none" src="clip4.wav"></audio></td>
+        <td><audio controls preload="none" src="clip4_sl11.wav"></audio></td>
+        <td><center>-</center></td>
+        <td><audio controls preload="none" src="clip4_rx11.wav"></audio></td>
+        <td><audio controls preload="none" src="clip4_acoustica.wav"></audio></td>
+    </tr>
+</table>
+
+<h2><a id="devoice">DeVoice</a></h2>
+<table>
+    <tr>
+        <th>Original</th>
+        <th>SpectraLayers 11<br/>(Main Voice)</th>
+        <th>SpectraLayers 11<br/>(Background Voice)</th>
+        <th>Clarity Vx 14</th>
+        <th>RX 11</th>
+        <th>Acoustica 7.5</th>
+    </tr>
+    <tr>
+        <td><audio controls preload="none" src="voice1.wav"></audio></td>
+        <td><audio controls preload="none" src="voice1_sl_1.wav"></audio></td>
+        <td><audio controls preload="none" src="voice1_sl_2.wav"></audio></td>
         <td><center>-</center></td>
         <td><center>-</center></td>
         <td><center>-</center></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice2.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice2_sl_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice2_sl_2.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="voice2.wav"></audio></td>
+        <td><audio controls preload="none" src="voice2_sl_1.wav"></audio></td>
+        <td><audio controls preload="none" src="voice2_sl_2.wav"></audio></td>
         <td><center>-</center></td>
         <td><center>-</center></td>
         <td><center>-</center></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice3.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice3_sl_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice3_sl_2.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="voice3.wav"></audio></td>
+        <td><audio controls preload="none" src="voice3_sl_1.wav"></audio></td>
+        <td><audio controls preload="none" src="voice3_sl_2.wav"></audio></td>
         <td><center>-</center></td>
         <td><center>-</center></td>
         <td><center>-</center></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice4.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice4_sl_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice4_sl_2.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="voice4.wav"></audio></td>
+        <td><audio controls preload="none" src="voice4_sl_1.wav"></audio></td>
+        <td><audio controls preload="none" src="voice4_sl_2.wav"></audio></td>
         <td><center>-</center></td>
         <td><center>-</center></td>
         <td><center>-</center></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice5.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice5_sl_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice5_sl_2.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="voice5.wav"></audio></td>
+        <td><audio controls preload="none" src="voice5_sl_1.wav"></audio></td>
+        <td><audio controls preload="none" src="voice5_sl_2.wav"></audio></td>
         <td><center>-</center></td>
         <td><center>-</center></td>
         <td><center>-</center></td>
     </tr>
     <tr>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice6.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice6_sl_1.wav?raw=true"></audio></td>
-        <td><audio controls preload="none" src="https://github.com/divideconcept/Restoration-Comparison/blob/main/voice6_sl_2.wav?raw=true"></audio></td>
+        <td><audio controls preload="none" src="voice6.wav"></audio></td>
+        <td><audio controls preload="none" src="voice6_sl_1.wav"></audio></td>
+        <td><audio controls preload="none" src="voice6_sl_2.wav"></audio></td>
         <td><center>-</center></td>
         <td><center>-</center></td>
         <td><center>-</center></td>
